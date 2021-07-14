@@ -16,38 +16,44 @@ Install all Dell EMC Ansible roles.
 
 ::
 
-  ansible-galaxy install -r dellemc_roles.txt
+  ansible-galaxy install -r dellemc_roles.yml
 
-where ``dellemc_roles.txt`` is defined as:
+where ``dellemc_roles.yml`` is defined as:
 
 :: 
 
-  Dell-Networking.dellos-aaa
-  Dell-Networking.dellos-acl
-  Dell-Networking.dellos-bgp
-  Dell-Networking.dellos-copy-config
-  Dell-Networking.dellos-dcb
-  Dell-Networking.dellos-dns
-  Dell-Networking.dellos-ecmp
-  Dell-Networking.dellos-flow-monitor
-  Dell-Networking.dellos-image-upgrade
-  Dell-Networking.dellos-interface
-  Dell-Networking.dellos-lag
-  Dell-Networking.dellos-lldp
-  Dell-Networking.dellos-logging
-  Dell-Networking.dellos-ntp
-  Dell-Networking.dellos-prefix-list
-  Dell-Networking.dellos-qos
-  Dell-Networking.dellos-route-map
-  Dell-Networking.dellos-sflow
-  Dell-Networking.dellos-snmp
-  Dell-Networking.dellos-system
-  Dell-Networking.dellos-users
-  Dell-Networking.dellos-vlan
-  Dell-Networking.dellos-vlt
-  Dell-Networking.dellos-vrf
-  Dell-Networking.dellos-vrrp
-  Dell-Networking.dellos-xstp
+- src: Dell-Networking.dellos-aaa
+- src: Dell-Networking.dellos-acl
+- src: Dell-Networking.dellos-bgp
+- src: Dell-Networking.dellos_bfd
+- src: Dell-Networking.dellos-copy-config
+- src: Dell-Networking.dellos-dcb
+- src: Dell-Networking.dellos-dns
+- src: Dell-Networking.dellos-ecmp
+- src: Dell-Networking.dellos_fabric_summary
+- src: Dell-Networking.dellos-flow-monitor
+- src: Dell-Networking.dellos-image-upgrade
+- src: Dell-Networking.dellos-interface
+- src: Dell-Networking.dellos-lag
+- src: Dell-Networking.dellos-lldp
+- src: Dell-Networking.dellos-logging
+- src: Dell-Networking.dellos_network_validation
+- src: Dell-Networking.dellos-ntp
+- src: Dell-Networking.dellos-prefix-list
+- src: Dell-Networking.dellos-qos
+- src: Dell-Networking.dellos-route-map
+- src: Dell-Networking.dellos-sflow
+- src: Dell-Networking.dellos-snmp
+- src: Dell-Networking.dellos-system
+- src: Dell-Networking.dellos_template
+- src: Dell-Networking.dellos_uplink
+- src: Dell-Networking.dellos-users
+- src: Dell-Networking.dellos-vlan
+- src: Dell-Networking.dellos-vlt
+- src: Dell-Networking.dellos-vrf
+- src: Dell-Networking.dellos-vrrp
+- src: Dell-Networking.dellos_vxlan
+- src: Dell-Networking.dellos-xstp
 
 You can also install an individual Dell EMC Networking Ansible role using a single command. For example, to install the AAA role use ``ansible-galaxy install Dell-Networking.dellos.aaa``.
 
